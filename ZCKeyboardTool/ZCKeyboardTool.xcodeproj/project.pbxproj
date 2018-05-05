@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C2B63F9209D431C008B9AD7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2B63F8209D431C008B9AD7 /* AppDelegate.m */; };
+		2C2B63FC209D431C008B9AD7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2B63FB209D431C008B9AD7 /* ViewController.m */; };
+		2C2B63FF209D431C008B9AD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C2B63FD209D431C008B9AD7 /* Main.storyboard */; };
+		2C2B6401209D431F008B9AD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C2B6400209D431F008B9AD7 /* Assets.xcassets */; };
+		2C2B6404209D431F008B9AD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C2B6402209D431F008B9AD7 /* LaunchScreen.storyboard */; };
+		2C2B6407209D431F008B9AD7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2B6406209D431F008B9AD7 /* main.m */; };
+		2C2B6411209D431F008B9AD7 /* ZCKeyboardToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2B6410209D431F008B9AD7 /* ZCKeyboardToolTests.m */; };
+		2C2B641C209D431F008B9AD7 /* ZCKeyboardToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2B641B209D431F008B9AD7 /* ZCKeyboardToolUITests.m */; };
+		2C2B642C209D43DF008B9AD7 /* ZCKeyboardTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2B642A209D43DF008B9AD7 /* ZCKeyboardTool.m */; };
+		2C2B642F209D64B3008B9AD7 /* ZCCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2B642E209D64B3008B9AD7 /* ZCCommentView.m */; };
+		2C2B6432209D7129008B9AD7 /* UIView+UIView_ZCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2B6431209D7129008B9AD7 /* UIView+UIView_ZCExtension.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2C2B640D209D431F008B9AD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C2B63EC209D431C008B9AD7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C2B63F3209D431C008B9AD7;
+			remoteInfo = ZCKeyboardTool;
+		};
+		2C2B6418209D431F008B9AD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C2B63EC209D431C008B9AD7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C2B63F3209D431C008B9AD7;
+			remoteInfo = ZCKeyboardTool;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2C2B63F4209D431C008B9AD7 /* ZCKeyboardTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZCKeyboardTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C2B63F7209D431C008B9AD7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2C2B63F8209D431C008B9AD7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2C2B63FA209D431C008B9AD7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2C2B63FB209D431C008B9AD7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2C2B63FE209D431C008B9AD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2C2B6400209D431F008B9AD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C2B6403209D431F008B9AD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2C2B6405209D431F008B9AD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C2B6406209D431F008B9AD7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2C2B640C209D431F008B9AD7 /* ZCKeyboardToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZCKeyboardToolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C2B6410209D431F008B9AD7 /* ZCKeyboardToolTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZCKeyboardToolTests.m; sourceTree = "<group>"; };
+		2C2B6412209D431F008B9AD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C2B6417209D431F008B9AD7 /* ZCKeyboardToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZCKeyboardToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C2B641B209D431F008B9AD7 /* ZCKeyboardToolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZCKeyboardToolUITests.m; sourceTree = "<group>"; };
+		2C2B641D209D431F008B9AD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C2B642A209D43DF008B9AD7 /* ZCKeyboardTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCKeyboardTool.m; sourceTree = "<group>"; };
+		2C2B642B209D43DF008B9AD7 /* ZCKeyboardTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCKeyboardTool.h; sourceTree = "<group>"; };
+		2C2B642D209D64B3008B9AD7 /* ZCCommentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZCCommentView.h; sourceTree = "<group>"; };
+		2C2B642E209D64B3008B9AD7 /* ZCCommentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZCCommentView.m; sourceTree = "<group>"; };
+		2C2B6430209D7129008B9AD7 /* UIView+UIView_ZCExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+UIView_ZCExtension.h"; sourceTree = "<group>"; };
+		2C2B6431209D7129008B9AD7 /* UIView+UIView_ZCExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+UIView_ZCExtension.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C2B63F1209D431C008B9AD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C2B6409209D431F008B9AD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C2B6414209D431F008B9AD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C2B63EB209D431C008B9AD7 = {
+			isa = PBXGroup;
+			children = (
+				2C2B63F6209D431C008B9AD7 /* ZCKeyboardTool */,
+				2C2B640F209D431F008B9AD7 /* ZCKeyboardToolTests */,
+				2C2B641A209D431F008B9AD7 /* ZCKeyboardToolUITests */,
+				2C2B63F5209D431C008B9AD7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2C2B63F5209D431C008B9AD7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C2B63F4209D431C008B9AD7 /* ZCKeyboardTool.app */,
+				2C2B640C209D431F008B9AD7 /* ZCKeyboardToolTests.xctest */,
+				2C2B6417209D431F008B9AD7 /* ZCKeyboardToolUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C2B63F6209D431C008B9AD7 /* ZCKeyboardTool */ = {
+			isa = PBXGroup;
+			children = (
+				2C2B6429209D4381008B9AD7 /* ZCkeyboardTool */,
+				2C2B63F7209D431C008B9AD7 /* AppDelegate.h */,
+				2C2B63F8209D431C008B9AD7 /* AppDelegate.m */,
+				2C2B63FA209D431C008B9AD7 /* ViewController.h */,
+				2C2B63FB209D431C008B9AD7 /* ViewController.m */,
+				2C2B63FD209D431C008B9AD7 /* Main.storyboard */,
+				2C2B6400209D431F008B9AD7 /* Assets.xcassets */,
+				2C2B6402209D431F008B9AD7 /* LaunchScreen.storyboard */,
+				2C2B6405209D431F008B9AD7 /* Info.plist */,
+				2C2B6406209D431F008B9AD7 /* main.m */,
+			);
+			path = ZCKeyboardTool;
+			sourceTree = "<group>";
+		};
+		2C2B640F209D431F008B9AD7 /* ZCKeyboardToolTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C2B6410209D431F008B9AD7 /* ZCKeyboardToolTests.m */,
+				2C2B6412209D431F008B9AD7 /* Info.plist */,
+			);
+			path = ZCKeyboardToolTests;
+			sourceTree = "<group>";
+		};
+		2C2B641A209D431F008B9AD7 /* ZCKeyboardToolUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2C2B641B209D431F008B9AD7 /* ZCKeyboardToolUITests.m */,
+				2C2B641D209D431F008B9AD7 /* Info.plist */,
+			);
+			path = ZCKeyboardToolUITests;
+			sourceTree = "<group>";
+		};
+		2C2B6429209D4381008B9AD7 /* ZCkeyboardTool */ = {
+			isa = PBXGroup;
+			children = (
+				2C2B6430209D7129008B9AD7 /* UIView+UIView_ZCExtension.h */,
+				2C2B6431209D7129008B9AD7 /* UIView+UIView_ZCExtension.m */,
+				2C2B642B209D43DF008B9AD7 /* ZCKeyboardTool.h */,
+				2C2B642A209D43DF008B9AD7 /* ZCKeyboardTool.m */,
+				2C2B642D209D64B3008B9AD7 /* ZCCommentView.h */,
+				2C2B642E209D64B3008B9AD7 /* ZCCommentView.m */,
+			);
+			path = ZCkeyboardTool;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C2B63F3209D431C008B9AD7 /* ZCKeyboardTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C2B6420209D431F008B9AD7 /* Build configuration list for PBXNativeTarget "ZCKeyboardTool" */;
+			buildPhases = (
+				2C2B63F0209D431C008B9AD7 /* Sources */,
+				2C2B63F1209D431C008B9AD7 /* Frameworks */,
+				2C2B63F2209D431C008B9AD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZCKeyboardTool;
+			productName = ZCKeyboardTool;
+			productReference = 2C2B63F4209D431C008B9AD7 /* ZCKeyboardTool.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2C2B640B209D431F008B9AD7 /* ZCKeyboardToolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C2B6423209D431F008B9AD7 /* Build configuration list for PBXNativeTarget "ZCKeyboardToolTests" */;
+			buildPhases = (
+				2C2B6408209D431F008B9AD7 /* Sources */,
+				2C2B6409209D431F008B9AD7 /* Frameworks */,
+				2C2B640A209D431F008B9AD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C2B640E209D431F008B9AD7 /* PBXTargetDependency */,
+			);
+			name = ZCKeyboardToolTests;
+			productName = ZCKeyboardToolTests;
+			productReference = 2C2B640C209D431F008B9AD7 /* ZCKeyboardToolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2C2B6416209D431F008B9AD7 /* ZCKeyboardToolUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C2B6426209D431F008B9AD7 /* Build configuration list for PBXNativeTarget "ZCKeyboardToolUITests" */;
+			buildPhases = (
+				2C2B6413209D431F008B9AD7 /* Sources */,
+				2C2B6414209D431F008B9AD7 /* Frameworks */,
+				2C2B6415209D431F008B9AD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C2B6419209D431F008B9AD7 /* PBXTargetDependency */,
+			);
+			name = ZCKeyboardToolUITests;
+			productName = ZCKeyboardToolUITests;
+			productReference = 2C2B6417209D431F008B9AD7 /* ZCKeyboardToolUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C2B63EC209D431C008B9AD7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = hzc;
+				TargetAttributes = {
+					2C2B63F3209D431C008B9AD7 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					2C2B640B209D431F008B9AD7 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 2C2B63F3209D431C008B9AD7;
+					};
+					2C2B6416209D431F008B9AD7 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 2C2B63F3209D431C008B9AD7;
+					};
+				};
+			};
+			buildConfigurationList = 2C2B63EF209D431C008B9AD7 /* Build configuration list for PBXProject "ZCKeyboardTool" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2C2B63EB209D431C008B9AD7;
+			productRefGroup = 2C2B63F5209D431C008B9AD7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C2B63F3209D431C008B9AD7 /* ZCKeyboardTool */,
+				2C2B640B209D431F008B9AD7 /* ZCKeyboardToolTests */,
+				2C2B6416209D431F008B9AD7 /* ZCKeyboardToolUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C2B63F2209D431C008B9AD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C2B6404209D431F008B9AD7 /* LaunchScreen.storyboard in Resources */,
+				2C2B6401209D431F008B9AD7 /* Assets.xcassets in Resources */,
+				2C2B63FF209D431C008B9AD7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C2B640A209D431F008B9AD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C2B6415209D431F008B9AD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C2B63F0209D431C008B9AD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C2B63FC209D431C008B9AD7 /* ViewController.m in Sources */,
+				2C2B6407209D431F008B9AD7 /* main.m in Sources */,
+				2C2B6432209D7129008B9AD7 /* UIView+UIView_ZCExtension.m in Sources */,
+				2C2B63F9209D431C008B9AD7 /* AppDelegate.m in Sources */,
+				2C2B642F209D64B3008B9AD7 /* ZCCommentView.m in Sources */,
+				2C2B642C209D43DF008B9AD7 /* ZCKeyboardTool.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C2B6408209D431F008B9AD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C2B6411209D431F008B9AD7 /* ZCKeyboardToolTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C2B6413209D431F008B9AD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C2B641C209D431F008B9AD7 /* ZCKeyboardToolUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2C2B640E209D431F008B9AD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C2B63F3209D431C008B9AD7 /* ZCKeyboardTool */;
+			targetProxy = 2C2B640D209D431F008B9AD7 /* PBXContainerItemProxy */;
+		};
+		2C2B6419209D431F008B9AD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C2B63F3209D431C008B9AD7 /* ZCKeyboardTool */;
+			targetProxy = 2C2B6418209D431F008B9AD7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2C2B63FD209D431C008B9AD7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C2B63FE209D431C008B9AD7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2C2B6402209D431F008B9AD7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C2B6403209D431F008B9AD7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C2B641E209D431F008B9AD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2C2B641F209D431F008B9AD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C2B6421209D431F008B9AD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZCKeyboardTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hzc.ZCKeyboardTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2C2B6422209D431F008B9AD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZCKeyboardTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hzc.ZCKeyboardTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2C2B6424209D431F008B9AD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZCKeyboardToolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hzc.ZCKeyboardToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZCKeyboardTool.app/ZCKeyboardTool";
+			};
+			name = Debug;
+		};
+		2C2B6425209D431F008B9AD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZCKeyboardToolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hzc.ZCKeyboardToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZCKeyboardTool.app/ZCKeyboardTool";
+			};
+			name = Release;
+		};
+		2C2B6427209D431F008B9AD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZCKeyboardToolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hzc.ZCKeyboardToolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZCKeyboardTool;
+			};
+			name = Debug;
+		};
+		2C2B6428209D431F008B9AD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZCKeyboardToolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hzc.ZCKeyboardToolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZCKeyboardTool;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C2B63EF209D431C008B9AD7 /* Build configuration list for PBXProject "ZCKeyboardTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C2B641E209D431F008B9AD7 /* Debug */,
+				2C2B641F209D431F008B9AD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C2B6420209D431F008B9AD7 /* Build configuration list for PBXNativeTarget "ZCKeyboardTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C2B6421209D431F008B9AD7 /* Debug */,
+				2C2B6422209D431F008B9AD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C2B6423209D431F008B9AD7 /* Build configuration list for PBXNativeTarget "ZCKeyboardToolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C2B6424209D431F008B9AD7 /* Debug */,
+				2C2B6425209D431F008B9AD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C2B6426209D431F008B9AD7 /* Build configuration list for PBXNativeTarget "ZCKeyboardToolUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C2B6427209D431F008B9AD7 /* Debug */,
+				2C2B6428209D431F008B9AD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C2B63EC209D431C008B9AD7 /* Project object */;
+}
