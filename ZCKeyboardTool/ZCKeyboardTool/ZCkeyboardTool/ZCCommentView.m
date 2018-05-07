@@ -38,6 +38,7 @@
         [self addSubview:self.textV];
         self.textV.inputAccessoryView=self;
         
+        self.backgroundColor=[UIColor whiteColor];
     }
     return self;
 }
