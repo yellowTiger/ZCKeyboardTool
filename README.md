@@ -8,6 +8,6 @@ How To Use:如何使用
 
 #import "ZCKeyboardTool.h"
 
- [[ZCKeyboardTool shareTools] showInputTextViewKeyboard:^(NSString *txt) {
-      NSLog(@"发送");
-  }];
+[[ZCKeyboardTool shareTools] showInputTextViewKeyboard:self.view txtBlock:^(NSString *txt) {
+NSLog(@"发送");
+}];
