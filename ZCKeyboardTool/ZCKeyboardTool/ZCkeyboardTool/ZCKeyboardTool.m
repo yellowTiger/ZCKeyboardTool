@@ -7,7 +7,7 @@
 //
 
 #import "ZCKeyboardTool.h"
-#import "ZCCommentView.h"
+
 #import "UIView+UIView_ZCExtension.h"
 //提供一个static修饰的全局变量，强引用着已经实例化的单例对象实例
 static ZCKeyboardTool *_instance;
@@ -15,8 +15,9 @@ static ZCKeyboardTool *_instance;
 //@property(nonatomic,strong)UIView * blankV;
 //@property(nonatomic,strong) UITextView* textV;
 @property(nonatomic,copy)void (^zcBlock)(NSString*);
-@property(nonatomic,strong)ZCCommentView * commentsV;
 
+@property (nonatomic, strong) UIView* coverV;
+@property (nonatomic, strong) UITextView* txtF;
 @end
 @implementation ZCKeyboardTool
 
@@ -59,22 +60,39 @@ static ZCKeyboardTool *_instance;
     return _instance;
 }
 
--(void)showInputTextViewKeyboard:(void(^)(NSString* txt))block{
+-(void)showInputTextViewKeyboard:(UIView*)superV txtBlock:(void(^)(NSString* txt))block{
     CGFloat screenHeight = [UIScreen mainScreen].bounds.size.height;
     CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
-
-    [self addGestureRecognizer:[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(closeClick)]];
-    if (_commentsV==nil) {
-         self.commentsV=[[ZCCommentView alloc] initWithFrame:CGRectMake(0.0, 0, screenWidth, 40.0)];
-        [self.commentsV.btn addTarget:self action:@selector(sendClick:) forControlEvents:UIControlEventTouchUpInside];
-    }
     
-    [self addSubview:self.commentsV];
+    self.coverV=[[UIView alloc]init];
+    [_coverV addGestureRecognizer:[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(closeClick)]];
+    [superV addSubview:_coverV];
+    _coverV.frame=CGRectMake(0, 0, screenWidth, screenHeight);
+    self.txtF=[[UITextView alloc]init];
+    _txtF.hidden=YES;
+    //        txtF.userInteractionEnabled=NO;
+    [superV addSubview:_txtF];
+    _txtF.frame=CGRectMake(0, screenHeight, 1, 1);
+    self.commentsV=[[ZCCommentView alloc]init];
+    self.txtF.inputAccessoryView=self.commentsV;
+    self.commentsV.frame=CGRectMake(0, 0, screenWidth, 40);
     
-    self.zcBlock=block;
-    self.frame=CGRectMake(0, 0, screenWidth, screenHeight);
-    [[[UIApplication sharedApplication] keyWindow]  addSubview:self];
+    [self.txtF becomeFirstResponder];
     [self.commentsV.textV becomeFirstResponder];
+    self.zcBlock=block;
+    [self.commentsV.btn addTarget:self action:@selector(sendClick:) forControlEvents:UIControlEventTouchUpInside];
+//        [self addGestureRecognizer:[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(closeClick)]];
+//    if (_commentsV==nil) {
+//         self.commentsV=[[ZCCommentView alloc] initWithFrame:CGRectMake(0.0, 0, screenWidth, 40.0)];
+//
+//    }
+//    [self.commentsV.btn addTarget:self action:@selector(sendClick:) forControlEvents:UIControlEventTouchUpInside];
+//    [self addSubview:self.commentsV];
+//
+//    self.zcBlock=block;
+//    self.frame=CGRectMake(0, 0, screenWidth, screenHeight);
+//    [[[UIApplication sharedApplication] keyWindow]  addSubview:self];
+//    [self.commentsV.textV becomeFirstResponder];
 }
 
 -(void)sendClick:(UIButton*)btn{
@@ -86,7 +104,11 @@ static ZCKeyboardTool *_instance;
 //退出键盘
 -(void)closeClick{
     [self.commentsV.textV resignFirstResponder];
-    [self removeFromSuperview];
+    [self.txtF resignFirstResponder];
+    [self.coverV removeFromSuperview];
+    if (self.closeBlock!=nil) {
+        self.closeBlock();
+    }
 }
 
 @end

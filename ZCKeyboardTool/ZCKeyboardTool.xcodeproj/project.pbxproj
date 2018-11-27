@@ -15,9 +15,9 @@
 		2C2B6407209D431F008B9AD7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2B6406209D431F008B9AD7 /* main.m */; };
 		2C2B6411209D431F008B9AD7 /* ZCKeyboardToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2B6410209D431F008B9AD7 /* ZCKeyboardToolTests.m */; };
 		2C2B641C209D431F008B9AD7 /* ZCKeyboardToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2B641B209D431F008B9AD7 /* ZCKeyboardToolUITests.m */; };
-		2C2B642C209D43DF008B9AD7 /* ZCKeyboardTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2B642A209D43DF008B9AD7 /* ZCKeyboardTool.m */; };
 		2C2B642F209D64B3008B9AD7 /* ZCCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2B642E209D64B3008B9AD7 /* ZCCommentView.m */; };
 		2C2B6432209D7129008B9AD7 /* UIView+UIView_ZCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2B6431209D7129008B9AD7 /* UIView+UIView_ZCExtension.m */; };
+		2C63E8C021AD97DC00EE6D85 /* ZCKeyboardTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C63E8BE21AD97DC00EE6D85 /* ZCKeyboardTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,12 +54,12 @@
 		2C2B6417209D431F008B9AD7 /* ZCKeyboardToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZCKeyboardToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C2B641B209D431F008B9AD7 /* ZCKeyboardToolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZCKeyboardToolUITests.m; sourceTree = "<group>"; };
 		2C2B641D209D431F008B9AD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2C2B642A209D43DF008B9AD7 /* ZCKeyboardTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCKeyboardTool.m; sourceTree = "<group>"; };
-		2C2B642B209D43DF008B9AD7 /* ZCKeyboardTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCKeyboardTool.h; sourceTree = "<group>"; };
 		2C2B642D209D64B3008B9AD7 /* ZCCommentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZCCommentView.h; sourceTree = "<group>"; };
 		2C2B642E209D64B3008B9AD7 /* ZCCommentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZCCommentView.m; sourceTree = "<group>"; };
 		2C2B6430209D7129008B9AD7 /* UIView+UIView_ZCExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+UIView_ZCExtension.h"; sourceTree = "<group>"; };
 		2C2B6431209D7129008B9AD7 /* UIView+UIView_ZCExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+UIView_ZCExtension.m"; sourceTree = "<group>"; };
+		2C63E8BE21AD97DC00EE6D85 /* ZCKeyboardTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCKeyboardTool.m; sourceTree = "<group>"; };
+		2C63E8BF21AD97DC00EE6D85 /* ZCKeyboardTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCKeyboardTool.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,10 +147,10 @@
 			children = (
 				2C2B6430209D7129008B9AD7 /* UIView+UIView_ZCExtension.h */,
 				2C2B6431209D7129008B9AD7 /* UIView+UIView_ZCExtension.m */,
-				2C2B642B209D43DF008B9AD7 /* ZCKeyboardTool.h */,
-				2C2B642A209D43DF008B9AD7 /* ZCKeyboardTool.m */,
 				2C2B642D209D64B3008B9AD7 /* ZCCommentView.h */,
 				2C2B642E209D64B3008B9AD7 /* ZCCommentView.m */,
+				2C63E8BF21AD97DC00EE6D85 /* ZCKeyboardTool.h */,
+				2C63E8BE21AD97DC00EE6D85 /* ZCKeyboardTool.m */,
 			);
 			path = ZCkeyboardTool;
 			sourceTree = "<group>";
@@ -286,11 +286,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C2B63FC209D431C008B9AD7 /* ViewController.m in Sources */,
+				2C63E8C021AD97DC00EE6D85 /* ZCKeyboardTool.m in Sources */,
 				2C2B6407209D431F008B9AD7 /* main.m in Sources */,
 				2C2B6432209D7129008B9AD7 /* UIView+UIView_ZCExtension.m in Sources */,
 				2C2B63F9209D431C008B9AD7 /* AppDelegate.m in Sources */,
 				2C2B642F209D64B3008B9AD7 /* ZCCommentView.m in Sources */,
-				2C2B642C209D43DF008B9AD7 /* ZCKeyboardTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
